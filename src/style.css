@@ -1,0 +1,60 @@
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayBlue: hsl(217, 19%, 38%);
+  --darkGrayBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  background-color: var(--darkBlue);
+  position: relative;
+}
+q {
+  font-size: 28px;
+}
+.advice_card {
+  background-color: var(--darkGrayBlue);
+  width: 90%;
+  height: max-content;
+  border-radius: 10px;
+  padding: 2em 2em 3em;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.advice_card h6 {
+  margin-bottom: 2em;
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.advice_card blockquote {
+  color: var(--lightCyan);
+  font-weight: 700;
+  line-height: 1.9em;
+}
+.advice_card img {
+  display: block;
+  margin: 1em auto;
+}
+.advice_card img.dice {
+  background-color: var(--neonGreen);
+  width: 100%;
+  max-width: 60px;
+  padding: .8em;
+  border-radius:1.4em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 80%);
+}
