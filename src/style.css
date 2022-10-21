@@ -27,10 +27,10 @@ body {
 }
 
 q {
-  font-size: 28px;
+  font-size: 1.8em;
 }
 
-.advice_card {
+.container {
   background-color: var(--darkGrayBlue);
   width: 90%;
   height: max-content;
@@ -43,25 +43,25 @@ q {
   transform: translate(-50%, -50%);
 }
 
-.advice_card h6 {
+.container h6 {
   margin-bottom: 2em;
   color: var(--neonGreen);
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-.advice_card blockquote {
+.container blockquote {
   color: var(--lightCyan);
   font-weight: 700;
   line-height: 1.9em;
 }
 
-.advice_card img {
+.container img {
   display: block;
   margin: 1em auto;
 }
 
-.advice_card img.dice {
+.container img.dice {
   background-color: var(--neonGreen);
   width: 100%;
   max-width: 50px;
@@ -74,7 +74,25 @@ q {
   cursor: pointer;
   transition: .1s all ease-in-out;
 }
-.advice_card img.dice:hover {
+.container img.dice:hover {
   box-shadow: 2px 2px 20px -2px var(--neonGreen),
    -2px -2px 20px -2px var(--neonGreen);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+    width: 50%;
+  }
 }
