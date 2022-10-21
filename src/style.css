@@ -5,21 +5,31 @@
   --darkGrayBlue: hsl(217, 19%, 24%);
   --darkBlue: hsl(218, 23%, 16%);
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: Manrope;
+  src: url('../asset/Manrope-Regular.ttf');
+}
+
 body {
   font-size: 16px;
+  font-family: Manrope, sans-serif;
   height: 100%;
   width: 100%;
   background-color: var(--darkBlue);
   position: relative;
 }
+
 q {
   font-size: 28px;
 }
+
 .advice_card {
   background-color: var(--darkGrayBlue);
   width: 90%;
@@ -32,29 +42,39 @@ q {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .advice_card h6 {
   margin-bottom: 2em;
   color: var(--neonGreen);
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
 .advice_card blockquote {
   color: var(--lightCyan);
   font-weight: 700;
   line-height: 1.9em;
 }
+
 .advice_card img {
   display: block;
   margin: 1em auto;
 }
+
 .advice_card img.dice {
   background-color: var(--neonGreen);
   width: 100%;
-  max-width: 60px;
-  padding: .8em;
-  border-radius:1.4em;
+  max-width: 50px;
+  padding: 0.8em;
+  border-radius: 2em;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 80%);
+  cursor: pointer;
+  transition: .1s all ease-in-out;
+}
+.advice_card img.dice:hover {
+  box-shadow: 2px 2px 20px -2px var(--neonGreen),
+   -2px -2px 20px -2px var(--neonGreen);
 }
